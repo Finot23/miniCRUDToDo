@@ -9,5 +9,8 @@ package com.mycompany.todo;
  * @author antoniosalinas
  */
 public class ControlTareas {
-    
+   Tarea t = new Tarea();
+    public void agregarTarea(){
+        
+    }
 }

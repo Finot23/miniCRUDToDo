@@ -16,6 +16,12 @@ public class Tarea {
    String descripcion;
    String estado;
    Date fechaLimite;
+   
+   private void completarTarea (){
+       
+       
+   }
+   
 
     public Tarea() {
     }
