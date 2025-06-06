@@ -114,12 +114,8 @@ Para ejecutar este proyecto, sigue los siguientes pasos:
         ```
     * Si no usas Maven, descarga el JAR de MySQL Connector/J y añádelo manualmente a las librerías de tu proyecto en NetBeans (clic derecho en "Libraries" > "Add JAR/Folder...").
 
-4.  **Colocación de Recursos (Imágenes):**
-    * Asegúrate de que el archivo `mainIcon.png` esté ubicado correctamente en la carpeta de recursos de tu proyecto. La ruta esperada es:
-        `src/main/resources/com/mycompany/todo/imagenes/mainIcon.png`
-    * Si no lo tienes, la aplicación se ejecutará pero no mostrará el icono. Puedes descargar uno simple o comentar la línea en `TareaGUI.java` que carga el icono.
 
-5.  **Compilar y Ejecutar:**
+4.  **Compilar y Ejecutar:**
     * **Desde NetBeans:**
         * Haz clic derecho en tu proyecto (`ToDo`).
         * Selecciona "Clean and Build" para asegurarte de que todos los cambios (incluyendo los recursos) se compilen.
