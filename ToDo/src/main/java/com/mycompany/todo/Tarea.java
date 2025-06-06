@@ -11,22 +11,17 @@ import java.util.Date;
  * @author antoniosalinas
  */
 public class Tarea {
-   int id;
-   String titulo;
-   String descripcion;
-   String estado;
-   Date fechaLimite;
-   
-   private void completarTarea (){
-       
-       
-   }
-   
+    private int id; // Es buena práctica hacer los atributos privados y usar getters/setters
+    private String titulo;
+    private String descripcion;
+    private String estado;
+    private Date fechaLimite;
+
 
     public Tarea() {
+        // Constructor vacío, útil para frameworks o cuando necesitas instanciar y luego setear propiedades
     }
-   
-   
+
 
     public Tarea(int id, String titulo, String descripcion, String estado, Date fechaLimite) {
         this.id = id;
@@ -36,6 +31,7 @@ public class Tarea {
         this.fechaLimite = fechaLimite;
     }
 
+    // Getters
     public int getId() {
         return id;
     }
@@ -56,6 +52,7 @@ public class Tarea {
         return fechaLimite;
     }
 
+    // Setters
     public void setId(int id) {
         this.id = id;
     }
@@ -75,6 +72,16 @@ public class Tarea {
     public void setFechaLimite(Date fechaLimite) {
         this.fechaLimite = fechaLimite;
     }
-   
-   
+
+    // Opcional pero muy recomendado para depuración:
+    @Override
+    public String toString() {
+        return "Tarea{" +
+               "id=" + id +
+               ", titulo='" + titulo + '\'' +
+               ", descripcion='" + descripcion + '\'' +
+               ", estado='" + estado + '\'' +
+               ", fechaLimite=" + fechaLimite +
+               '}';
+    }
 }

@@ -10,7 +10,14 @@ package com.mycompany.todo;
  */
 public class ToDo {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+   public static void main(String[] args) {
+        // Usa EventQueue.invokeLater para asegurar que la creación y visualización
+        // de la GUI se haga en el Event Dispatch Thread (EDT), que es el hilo
+        // seguro para operaciones de Swing.
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new TareaGUI().setVisible(true); // Crea una nueva instancia de TareaGUI y la hace visible
+            }
+        });
     }
 }
